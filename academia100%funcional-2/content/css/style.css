@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+img{
+     pointer-events: none;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    background-color: #a00000;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    filter: drop-shadow(6px 6px 6px #808080);
+}
+
+.logo img{
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: 30px;
+}
+
+.link a{
+    position: relative;
+    top: -80px;
+    left: 850px;
+    margin-right: 160px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.link a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.5s ease;
+}
+
+.link a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.menu{
+    border-bottom: 4px solid #fff !important;
+}
+
+
+.rdsocial img{
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.imgbg img{
+    width: 1750px;
+    margin-left: 70px;
+    margin-top: 60px;
+    border-radius: 16px;
+    border: 5px solid #af0000;
+}
+
+.content h1{
+    font-size: 46px;
+    position: relative;
+    left: 145px;
+    bottom: 860px;
+    color: #fff;
+}
+
+.content p{
+    position: relative;
+    font-size: 22px;
+    left: 150px;
+    bottom: 830px;
+    color: #b1b1b1;
+}
+
+.content h2{
+    position: relative;
+    bottom: 540px;
+    left: 150px;
+    color: #ffd000;
+    font-size: 55px;
+}
+
+.content h4{
+    position: relative;
+    bottom: 540px;
+    left: 150px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.content h3{
+    position: relative;
+    bottom: 520px;
+    left: 150px;
+    color: #ffffff;
+    font-size: 32px;
+    background-color: #f12b24;
+    border-radius: 5px;
+    width: 232px;
+    padding: 5px;
+    text-align: center;
+}
+
+.content button{
+    position: relative;
+    bottom: 890px;
+    left: 150px;
+    width: 160px;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    background-color: #e20000;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.content button:hover{
+    transform: scale(1.03);
+    background-color: #810404;
+}
+
+footer{
+    width: 100%;
+    height: 580px;
+    background-color: #000;
+    color: #fff;
+    border-top: 4px solid #af0000;
+}
+
+.footer{
+    height: 580px;
+}
+
+.rdsocial h2{
+   display: block;
+   margin-top: 235px;
+   margin-left: 800px;
+}
+
+.rdsocial, .cop, .line1, .line2{
+    position: relative;
+    bottom: 430px;
+}
+
+.rdsocial a{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.a1{
+    margin-left: 888px;
+}
+
+.cop p{
+    display: flex;
+    margin-top: 220px;
+    margin-left: 600px;
+}
+
+.line2{
+    display: flex;
+    width: 1300px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: -170px;
+    margin-left: 310px;
+}
+
+.line1{
+    display: flex;
+    width: 1300px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 40px;
+    margin-left: 310px;
+}
+
+.img-footer img{
+    filter: invert(100%);
+    width: 900px;
+    height: 490px;
+    position: relative;
+    bottom: 120px;
+    margin-left: 502px;
+}
+
+.plan1{
+    height: 730px;
+    width: 360px;
+    background-color: #36363b;
+    color: #fff;
+    border-radius: 16px;
+    margin-left: 780px;
+    margin-top: -200px;
+    border: 3px solid #fa3636;
+    margin-bottom: 150px;
+    transition: 0.5s ease;
+}
+
+.plan1:hover, .plan2:hover, .plan3:hover{
+    transform: scale(1.02);
+}
+
+.plan1 h1{
+    font-size: 20px;
+    position: relative;
+    bottom: 20px;
+    margin-left: 20px;
+    background-color: #fa3636;
+    font-weight: bolder;
+    width: 240px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.plan1 h2{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.plan1 p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.plan1 .b{
+    font-weight: bolder;
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+.plan1 h3{
+    width: 140px;
+    font-weight: lighter;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.plan1 h3 strong{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.plan1 button{
+    width: 310px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    margin-left: 7%;
+    margin-top: 20px;
+    background-color: #a80505;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.plan1 button:hover, .plan2 button:hover, .plan3 button:hover{
+    transform: scale(1.05);
+    background-color: #810404;
+}
+
+.plan2{
+    height: 730px;
+    width: 360px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 16px;
+    margin-left: 200px;
+    margin-top: -886px;
+    border: 3px solid #3b3b3b38;
+    margin-bottom: 150px;
+    transition: 0.5s ease;
+}
+
+.plan2 h2{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+.plan2 p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.plan2 .b{
+    font-weight: bolder;
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+.plan2 h3{
+    width: 140px;
+    font-weight: lighter;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.plan2 h3 strong{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.plan2 button{
+    width: 310px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    margin-left: 7%;
+    margin-top: 20px;
+    background-color: #a80505;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.plan3{
+    height: 730px;
+    width: 360px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 16px;
+    margin-left: 1350px;
+    margin-top: -886px;
+    border: 3px solid #3b3b3b38;
+    margin-bottom: 150px;
+    transition: 0.5s ease;
+}
+
+.plan3 h2{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+.plan3 p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.plan3 .b{
+    font-weight: bolder;
+    font-size: 22px;
+    margin-left: 25px;
+}
+
+.plan3 h3{
+    width: 140px;
+    font-weight: lighter;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.plan3 h3 strong{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.plan3 button{
+    width: 310px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    margin-left: 7%;
+    margin-top: 20px;
+    background-color: #a80505;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
